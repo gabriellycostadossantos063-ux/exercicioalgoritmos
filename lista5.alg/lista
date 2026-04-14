@@ -1,0 +1,177 @@
+//---------exercicio1--------//
+algoritmo "multiplos"
+
+var
+
+   i: inteiro
+
+inicio
+
+   escreval("--- Múltiplos de 3 (3 a 30) ---")
+
+   para i de 3 ate 30 passo 3 faca
+
+      escreva(i, " ")
+
+   fimpara
+
+fimalgoritmo
+
+//--------exercicio2---------//
+algoritmo "pares_1_20"
+
+var
+  i: inteiro
+
+inicio
+
+  para i de 1 ate 20 faca
+      escreval(i)
+  fimpara
+fimalgoritmo
+
+
+//-----------exercicio3----------//
+algoritmo "CalcularFatorial"
+
+ 
+
+var
+   n, i, fat: inteiro
+
+inicio
+
+   Escreva("Digite um valor inteiro e positivo: ")
+
+   Leia(n)
+
+
+
+   fat <- 1
+
+
+   para i de 1 ate n faca
+
+      fat <- fat * i
+
+   fimpara
+
+ 
+
+   Escreval("O fatorial de ", n, " é: ", fat)
+
+ 
+
+fimalgoritmo
+
+//----------exercicio4---------//
+algoritmo "conceito_alunos"
+
+var
+  i: inteiro
+  nota: real
+
+inicio
+
+  para i de 1 ate 10 faca
+  leia(nota)
+
+   se nota >= 0 e nota <= 2.9 entao
+      escreval("E")
+      senao se nota <= 4.9 entao
+      escreva("D")
+      senao se nota <= 6.9 entao
+      escreva("C")
+      senao se nota <= 8.9 entao
+      escreva("B")
+      senao
+      escreva("A")
+      fimse
+      fimse
+      fimse
+      fimse
+  fimpara
+fimalgoritmo
+
+
+//--------exercicio5----------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------exercicio6------------/
+algoritmo "futebol"
+
+var
+  idade, contMenor18, contJogadores, contPeso80:
+  inteiro 
+  peso, altura, somaIdade, somaAltura:real
+
+inicio
+ contMenor18 <- 0
+ contJogadores <- 0
+ contPeso80 <- 0
+ somaIdade <- 0
+ somaAltura <- 0
+
+ leia(idade)
+  enquanto idade <> 0 faca
+  leia(peso)
+  leia(altura)
+
+  contJogadores <- contJogadores + 1
+  somaIdade <- somaIdade + somaIdade
+  somaAltura <- somaAltura + altura
+
+  se idade < 18 entao
+  contMenor18 <- contMenor18 +1
+  fimse
+
+  leia(idade)
+  fimenquanto
+
+  escreva("menores de 18: ", contMenor18)
+  escreva("media idade: ", somaIdade/contJogadores)
+  escreva("media altura: ", somaAltura/contJogadores)
+  escreva("mais de 80kg: ", contPeso80)
+
+
+fimalgoritmo
+
+
+//-------------exercicio7----------//
+

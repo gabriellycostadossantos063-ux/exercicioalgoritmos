@@ -1,0 +1,286 @@
+//-------exercicio1------//
+algoritmo "maiores_idade"
+
+var
+
+   idade, i, cont: inteiro
+ 
+inicio
+
+   cont <- 0
+ 
+   para i de 1 ate 10 faca
+
+      escreva("Digite a idade: ")
+
+      leia(idade)
+ 
+      se idade >= 18 entao
+
+         cont <- cont + 1
+
+      fimse
+
+   fimpara
+ 
+   escreva("Quantidade de maiores de idade: ", cont)
+
+fimalgoritmo
+ 
+
+ //---------exercicio2-------//
+ algoritmo "faixas_etarias"
+
+var
+
+   idade, i: inteiro
+
+   f1, f2, f3, f4, f5: inteiro
+ 
+inicio
+
+   f1<-0 f2<-0 f3<-0 f4<-0 f5<-0
+ 
+   para i de 1 ate 15 faca
+
+      leia(idade)
+ 
+      se idade >=1 e idade <=15 entao
+
+         f1 <- f1 + 1
+
+      senao se idade <=30 entao
+
+         f2 <- f2 + 1
+
+      senao se idade <=45 entao
+
+         f3 <- f3 + 1
+
+      senao se idade <=60 entao
+
+         f4 <- f4 + 1
+
+      senao
+
+         f5 <- f5 + 1
+
+      fimse
+      fimse
+      fimse
+      fimse
+
+   fimpara
+ 
+   escreva("1 a 15: ", f1)
+
+   escreva("16 a 30: ", f2)
+
+   escreva("31 a 45: ", f3)
+
+   escreva("46 a 60: ", f4)
+
+   escreva("61 ou mais: ", f5)
+
+fimalgoritmo
+
+
+//---------exercicio3----------//
+algoritmo "eleicao"
+
+var
+
+   voto, i: inteiro
+
+   c1, c2, c3, c4, nulo, branco: inteiro
+
+ inicio
+
+   c1<-0 c2<-0 c3<-0 c4<-0
+
+   nulo<-0 branco<-0
+ 
+   para i de 1 ate 100 faca
+
+      leia(voto)
+ 
+      escolha voto
+
+         Caso 1
+
+            c1 <- c1 + 1
+
+         Caso 2
+
+            c2 <- c2 + 1
+
+         Caso 3
+
+            c3 <- c3 + 1
+
+         Caso 4
+
+            c4 <- c4 + 1
+
+         Caso 5
+
+            nulo <- nulo + 1
+
+         Caso 6
+
+            branco <- branco + 1
+
+      fimescolha
+
+   fimpara
+ 
+   escreva("Candidato 1: ", c1)
+
+   escreva("Candidato 2: ", c2)
+
+   escreva("Candidato 3: ", c3)
+
+   escreva("Candidato 4: ", c4)
+
+   escreva("Nulos: ", nulo)
+
+   escreva("Brancos: ", branco)
+
+fimalgoritmo
+ 
+
+//------exercicio4--------//
+algoritmo "altura_sexo"
+var
+   i: inteiro
+   altura, somaMulheres, maiorAltura: real
+   sexo: caractere
+   contHomens, contMulheres: inteiro
+ 
+inicio
+   contHomens<-0 contMulheres<-0
+   somaMulheres<-0
+   maiorAltura<-0
+ 
+   para i de 1 ate 15 faca
+      leia(altura)
+      leia(sexo)
+ 
+      se altura > maioraltura entao
+         maioraltura <- altura
+      fimse
+ 
+      Se sexo = "M" entao
+         contHomens <- contHomens + 1
+      senao
+         contMulheres <- contMulheres + 1
+         somaMulheres <- somaMulheres + altura
+      fimse
+   fimpara
+ 
+   Escreva("Homens: ", contHomens)
+   Escreva("Maior altura: ", maiorAltura)
+ 
+   se contmulheres > 0 entao
+      Escreva("Media mulheres: ", somaMulheres / contMulheres)
+   fimse
+fimalgoritmo
+
+//--------exercicio5-------//
+algoritmo "tabela_temperatura"
+var
+   f: inteiro
+   c: real
+ 
+inicio
+   para f de 50 ate 65 faca
+      c <- (5/9) * (f - 32)
+      escreva("F: ", f, " -> C: ", c)
+   fimpara
+fimalgoritmo
+
+
+//-----------exercicio6-------//
+algoritmo "seq_a"
+ 
+var
+
+   i: inteiro
+
+   soma: real
+ 
+inicio
+
+   i <- 1
+
+   soma <- 0
+ 
+   enquanto i <= 100 faca
+
+      soma <- soma + (i / (i * 4))
+
+      i <- i + 1
+
+   fimenquanto
+ 
+   escreval("Resultado: ", soma)
+ 
+fimalgoritmo
+ 
+//--------------------//-------------------//
+ 
+algoritmo "seq_b"
+ 
+var
+
+   i: inteiro
+
+   soma: real
+ 
+inicio
+
+   i <- 1
+
+   soma <- 0
+ 
+   enquanto i < 100 faca
+
+      soma <- soma + (i / (i + 1))
+
+      i <- i + 1
+
+   fimenquanto
+ 
+   escreval("Resultado: ", soma)
+ 
+fimalgoritmo
+ 
+
+
+//---------exercicio7-------//
+algoritmo "fibonacci"
+ 
+var
+   a, b, c, contador: inteiro
+ 
+inicio
+   a <- 0
+   b <- 1
+   contador <- 1
+ 
+   escreva(a, " ", b, " ")
+ 
+   enquanto contador <= 8 faca
+      c <- a + b
+      escreva(c, " ")
+ 
+      a <- b
+      b <- c
+ 
+      contador <- contador + 1
+   fimenquanto
+ 
+fimalgoritmo
+
+ 
+ 
