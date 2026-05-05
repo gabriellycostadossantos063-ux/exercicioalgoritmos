@@ -1,0 +1,218 @@
+
+//----------- EXERCICIO 1 -------------//
+algoritmo "Exercício 1 - Vetor 10 Posições"
+// Disciplina  : Algoritmos e Programação
+// Descrição   : Lê 10 números inteiros e os mostra na mesma ordem
+// Autor(a)    : Gemini
+// Data atual  : 04/05/2026
+
+ 
+
+var
+   numeros: vetor [1..10] de inteiro
+   i: inteiro
+
+ 
+
+inicio
+   // Passo 1: Leitura dos dados
+   para i de 1 ate 10 faca
+      escreva("Digite o ", i, "º número: ")
+      leia(numeros[i])
+   fimpara
+
+ 
+
+   escreval("")
+   escreval("--- Números Digitados ---")
+
+ 
+
+   // Passo 2: Exibição dos dados na mesma ordem
+   para i de 1 ate 10 faca
+      escreva(numeros[i], " ")
+   fimpara
+
+   escreval("")
+
+ 
+
+fimalgoritmo
+
+ 
+
+//------------- EXERCICIO 2 -------------//
+algoritmo "Exercício 2 - Soma de Vetor Real"
+// Disciplina  : Algoritmos e Programação
+// Descrição   : Lê 5 números reais e mostra a soma total
+// Autor(a)    : Gemini
+// Data atual  : 04/05/2026
+
+ 
+
+var
+   valores: vetor [1..5] de real
+   soma: real
+   i: inteiro
+
+ 
+
+inicio
+   soma <- 0
+
+ 
+
+   // Passo 1: Leitura dos 5 números reais
+   para i de 1 ate 5 faca
+      escreva("Digite o ", i, "º número real: ")
+      leia(valores[i])
+
+      // Já vamos somando conforme o usuário digita
+      soma <- soma + valores[i]
+   fimpara
+
+ 
+
+   // Passo 2: Exibição do resultado
+   escreval("")
+   escreval("A soma de todos os valores é: ", soma:5:2)
+
+ 
+
+fimalgoritmo
+
+ 
+
+//------------ EXERCICIO 3 ----------//
+algoritmo "Exercício 3 - Maior e Menor Valor"
+// Disciplina  : Algoritmos e Programação
+// Descrição   : Lê 8 números e identifica o maior e o menor
+// Autor(a)    : Gemini
+// Data atual  : 04/05/2026
+
+ 
+
+var
+   numeros: vetor [1..8] de inteiro
+   i, maior, menor: inteiro
+
+ 
+
+inicio
+   // Passo 1: Leitura dos dados
+   para i de 1 ate 8 faca
+      escreva("Digite o ", i, "º número: ")
+      leia(numeros[i])
+
+      // Inicialização: Se for o primeiro número, ele é o maior e o menor
+      se (i = 1) entao
+         maior <- numeros[i]
+         menor <- numeros[i]
+      senao
+         // Comparação para achar o maior
+         se (numeros[i] > maior) entao
+            maior <- numeros[i]
+         fimse
+
+         // Comparação para achar o menor
+         se (numeros[i] < menor) entao
+            menor <- numeros[i]
+         fimse
+      fimse
+   fimpara
+
+ 
+
+   // Passo 2: Exibição dos resultados
+   escreval("")
+   escreval("O MAIOR valor digitado foi: ", maior)
+   escreval("O MENOR valor digitado foi: ", menor)
+
+ 
+
+fimalgoritmo
+
+ 
+
+//------------- EXERCICIO 4 -----------//
+algoritmo "Exercício 4 - Vetor na Ordem Inversa"
+// Disciplina  : Algoritmos e Programação
+// Descrição   : Lê 6 números e os exibe de trás para frente
+// Autor(a)    : Gemini
+// Data atual  : 04/05/2026
+
+ 
+
+var
+   numeros: vetor [1..6] de inteiro
+   i: inteiro
+
+ 
+
+inicio
+   // Passo 1: Leitura dos 6 números
+   para i de 1 ate 6 faca
+      escreva("Digite o ", i, "º número: ")
+      leia(numeros[i])
+   fimpara
+
+ 
+
+   escreval("")
+   escreval("--- Vetor na Ordem Inversa ---")
+
+ 
+
+   // Passo 2: Exibição começando do último índice (6) até o primeiro (1)
+   para i de 6 ate 1 passo -1 faca
+      escreva(numeros[i], " ")
+   fimpara
+
+   escreval("")
+
+ 
+
+fimalgoritmo
+
+ 
+
+//------------ EXERCICIO 5 -----------//
+algoritmo "Exercício 5 - Vetor na Ordem Inversa"
+// Disciplina  : Algoritmos e Programação
+// Descrição   : Lê 6 números e os exibe de trás para frente
+// Autor(a)    : Gemini
+// Data atual  : 04/05/2026
+
+ 
+
+var
+   numeros: vetor [1..6] de inteiro
+   i: inteiro
+
+ 
+
+inicio
+   // Passo 1: Leitura dos 6 números
+   para i de 1 ate 6 faca
+      escreva("Digite o ", i, "º número: ")
+      leia(numeros[i])
+   fimpara
+
+ 
+
+   escreval("")
+   escreval("--- Vetor na Ordem Inversa ---")
+
+ 
+
+   // Passo 2: Exibição começando do último índice (6) até o primeiro (1)
+   para i de 6 ate 1 passo -1 faca
+      escreva(numeros[i], " ")
+   fimpara
+
+   escreval("")
+
+ 
+
+fimalgoritmo
+
